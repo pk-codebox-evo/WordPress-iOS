@@ -59,7 +59,7 @@
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bDl-id-9M7" secondAttribute="bottom" priority="750" constant="9" id="PVc-g0-lrn"/>
                             <constraint firstAttribute="bottom" secondItem="Kcl-X2-f1f" secondAttribute="bottom" id="QxH-g8-9jc"/>
                             <constraint firstAttribute="trailing" secondItem="bDl-id-9M7" secondAttribute="trailing" constant="12" id="WP3-62-HDv"/>
-                            <constraint firstAttribute="trailing" secondItem="Wrp-Wr-ZBq" secondAttribute="trailing" priority="750" constant="12" id="WyT-D4-F81"/>
+                            <constraint firstAttribute="trailing" secondItem="Wrp-Wr-ZBq" secondAttribute="trailing" constant="12" id="WyT-D4-F81"/>
                             <constraint firstItem="0Gm-n3-CNm" firstAttribute="top" secondItem="Wrp-Wr-ZBq" secondAttribute="top" constant="4" id="Xqq-1P-og4"/>
                             <constraint firstItem="rcg-tb-060" firstAttribute="top" secondItem="Wrp-Wr-ZBq" secondAttribute="bottom" constant="2" id="Zbd-5G-fWz"/>
                             <constraint firstItem="bDl-id-9M7" firstAttribute="leading" secondItem="rcg-tb-060" secondAttribute="trailing" constant="4" id="eSq-C3-JsX"/>
