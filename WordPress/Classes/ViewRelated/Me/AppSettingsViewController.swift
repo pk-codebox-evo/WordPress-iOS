@@ -95,6 +95,7 @@ public class AppSettingsViewController: UITableViewController {
         return {
             value in
             MediaSettings().maxImageSizeSetting = value
+            ShareExtensionService.configureShareExtensionMaximumMediaDimension(value)
         }
     }
 

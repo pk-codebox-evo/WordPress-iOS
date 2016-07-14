@@ -138,8 +138,6 @@
 #import "WPWalkthroughOverlayView.h"
 #import "WPWebViewController.h"
 #import "WPTabBarController.h"
-#import "WPSearchController.h"
-#import "WPSearchControllerConfigurator.h"
 #import "WPWalkthroughTextField.h"
 #import "WPUserAgent.h"
 #import "WordPressComServiceRemote.h"
