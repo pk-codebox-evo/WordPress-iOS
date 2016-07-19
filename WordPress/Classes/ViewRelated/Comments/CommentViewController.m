@@ -67,7 +67,7 @@ typedef NS_ENUM(NSUInteger, CommentsDetailsRow) {
 
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView.translatesAutoresizingMaskIntoConstraints = NO;
-    tableView.cellLayoutMarginsFollowReadableWidth = YES;
+    tableView.cellLayoutMarginsFollowReadableWidth = NO;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.delegate = self;
     tableView.dataSource = self;
@@ -326,7 +326,13 @@ typedef NS_ENUM(NSUInteger, CommentsDetailsRow) {
 - (void)setupCell:(UITableViewCell *)cell
 {
     NSParameterAssert(cell);
-    
+
+    if ([cell isKindOfClass:[WPTableViewCell class]]) {
+        // Temporarily force margins for WPTableViewCell hack.
+        // Brent C. Jul/19/2016
+        [(WPTableViewCell *)cell setForceCustomCellMargins:YES];
+    }
+
     // This is gonna look way better in Swift!
     if ([cell isKindOfClass:[NoteBlockHeaderTableViewCell class]]) {
         [self setupHeaderCell:(NoteBlockHeaderTableViewCell *)cell];
