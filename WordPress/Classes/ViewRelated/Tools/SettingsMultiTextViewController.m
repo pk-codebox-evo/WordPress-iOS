@@ -115,9 +115,14 @@ static CGFloat const SettingsMinHeight = 41.0f;
     return nil;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
 {
-    return self.hintView;
+    return self.hint;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section
+{
+    [WPStyleGuide configureTableViewSectionFooter:view];
 }
 
 - (void)textViewDidChange:(UITextView *)textView
